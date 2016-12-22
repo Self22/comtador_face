@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "fonts.scss"
+  ],
+  "names": [],
+  "mappings": "AAAA,WACE,YAAA,eACA,IAAA,yBAAA,cAAA,iBAAA,mBAAA,kBAAA,eAGA,YAAA,IACA,WAAA,OAGF,WACE,YAAA,eACA,IAAA,8BAAA,cAAA,iBAAA,mBAAA,kBAAA,eAGA,YAAA,IACA,WAAA,KAIF,WACE,YAAA,OACA,IAAA,sCAAA,4BAAA,6BAAA,gBAAA,4BAAA,eAAA,2BAAA,mBACA,YAAA,IACA,WAAA,OAGF,WACE,YAAA,OACA,IAAA,yBAAA,wBAAA,kBAAA,gBAAA,iBAAA,eAAA,gBAAA,mBACA,YAAA,IACA,WAAA,OAIF,WACE,YAAA,OACA,IAAA,8BAAA,qBAAA,sBAAA,gBAAA,qBAAA,eAAA,oBAAA,mBACA,YAAA,IACA,WAAA",
+  "file": "fonts.css",
+  "sourcesContent": [
+    "@font-face {\r\n  font-family: 'PlumbCondensed';\r\n  src: url('../fonts/PlumbC.otf') format('otf'),\r\n  url('webfont.ttf')  format('truetype'), /* ������ ���� ����� ��������� ������ Android, ����� ���������������� */\r\n  url('webfont.woff') format('woff');\r\n  font-weight: normal;\r\n  font-style: normal;\r\n}\r\n\r\n@font-face {\r\n  font-family: 'PlumbCondensed';\r\n  src: url('../fonts/PlumbC-Bold.otf') format('otf'),\r\n  url('webfont.ttf')  format('truetype'), /* ������ ���� ����� ��������� ������ Android, ����� ���������������� */\r\n  url('webfont.woff') format('woff');\r\n  font-weight: normal;\r\n  font-style: bold;\r\n}\r\n\r\n\r\n@font-face {\r\n  font-family: 'Roboto';\r\n  src: local('../fonts/Roboto Light Italic'), local('Roboto-LightItalic'), url('robotolightitalic.woff2') format('woff2'), url('robotolightitalic.woff') format('woff'), url('robotolightitalic.ttf') format('truetype');\r\n  font-weight: 300;\r\n  font-style: italic;\r\n}\r\n\r\n@font-face {\r\n  font-family: 'Roboto';\r\n  src: local('../fonts/Roboto'), local('Roboto-Regular'), url('roboto.woff2') format('woff2'), url('roboto.woff') format('woff'), url('roboto.ttf') format('truetype');\r\n  font-weight: 400;\r\n  font-style: normal;\r\n}\r\n\r\n\r\n@font-face {\r\n  font-family: 'Roboto';\r\n  src: local('../fonts/Roboto Bold'), local('Roboto-Bold'), url('robotobold.woff2') format('woff2'), url('robotobold.woff') format('woff'), url('robotobold.ttf') format('truetype');\r\n  font-weight: 700;\r\n  font-style: normal;\r\n}\r\n\r\n"
+  ]
+}

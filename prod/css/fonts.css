@@ -1,0 +1,36 @@
+@font-face {
+    font-family: PlumbCondensed;
+    src: url(../fonts/PlumbC.otf) format("otf"), url(webfont.ttf) format("truetype"), url(webfont.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: PlumbCondensed;
+    src: url(../fonts/PlumbC-Bold.otf) format("otf"), url(webfont.ttf) format("truetype"), url(webfont.woff) format("woff");
+    font-weight: 400;
+    font-style: bold
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local("../fonts/Roboto Light Italic"), local("Roboto-LightItalic"), url(robotolightitalic.woff2) format("woff2"), url(robotolightitalic.woff) format("woff"), url(robotolightitalic.ttf) format("truetype");
+    font-weight: 300;
+    font-style: italic
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local("../fonts/Roboto"), local("Roboto-Regular"), url(roboto.woff2) format("woff2"), url(roboto.woff) format("woff"), url(roboto.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local("../fonts/Roboto Bold"), local("Roboto-Bold"), url(robotobold.woff2) format("woff2"), url(robotobold.woff) format("woff"), url(robotobold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+
+/*# sourceMappingURL=fonts.css.map */
