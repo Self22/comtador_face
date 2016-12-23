@@ -1,0 +1,49 @@
+
+.header-index {
+  justify-content: flex-end;
+
+  @include phones {
+    justify-content: space-between;
+  }
+}
+
+.header__address {
+  font-family: PlumbC;
+  font-size: 16px;
+  font-style: normal;
+  color: #CED5D8;
+
+  @include phones {
+    display: none;
+  }
+
+}
+
+.header__phone {
+  font-family: PlumbC;
+  font-size: 24px;
+  font-weight: 700;
+  color: #CED5D8;
+  text-decoration: none;
+  padding-left: 2%;
+  padding-right: 2%;
+
+  @include phones {
+    color: #2C3339;
+    font-size: 28px;
+    margin-right: 5%;
+    margin-top: 8%;
+  }
+}
+
+.header__logo-mob {
+
+  display: none;
+
+  @include phones {
+    display: block;
+    width: 8%;
+    margin-left: 3%;
+    margin-top: 5%;
+  }
+}

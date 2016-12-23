@@ -1,10 +1,14 @@
 //tools
 @import "_misc/mixins";
 @import "_misc/normalize";
+
 //fonts
 @import "fonts.css";
 
 //partials
+@import "partials/container";
+@import "partials/header";
+@import "partials/nav";
 
 * {
   @include box-sizing(border-box);
@@ -25,26 +29,78 @@ body {
   position: relative;
 }
 
-.container {
+.header {
+  height: 60px;
   display: flex;
-  flex-flow: column;
-  width: 100%;
-  height: 100%;
+  align-items: center;
 
-  &__index {
-    background: #2C3339 url("../img/bg_index.jpg") 100% 100% no-repeat fixed;
-    background-size: cover;
+  @include phones {
+    margin-bottom: 10%;
   }
 }
 
-.header {
-  height: 60px;
-}
-
 .main {
+  display: flex;
+  flex-direction: row;
   flex: 1;
+  padding-bottom: 30px;
+
+  @include phones {
+    flex-flow: row wrap;
+  }
 }
 
-.header-index {
+.nav {
   display: flex;
+  flex: 3;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  @include phones {
+    flex: 100%;
+    order: 2;
+  }
+
+}
+
+.index__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 9;
+
+  @include phones {
+    flex: 100%;
+    order: 1;
+  }
+
+}
+
+.pagination {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include phones {
+    display: none;
+  }
+}
+
+.paginator {
+  height: 180px;
+  width: 22px;
+}
+
+.index__logo {
+  width: 72%;
+
+  @include phones {
+    width: 84%;
+  }
+
+}
+
+.st0 {
+  fill: #2C3339;
 }
