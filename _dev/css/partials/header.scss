@@ -1,4 +1,12 @@
 
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
 .header-index {
   justify-content: flex-end;
 
@@ -8,10 +16,17 @@
 }
 
 .header__address {
+  flex: 860;
   font-family: PlumbC;
-  font-size: 16px;
+  font-size: 12px;
   font-style: normal;
-  color: #CED5D8;
+  color: #2C3339;
+  text-align: right;
+
+  &-index {
+    color: #CED5D8;
+    flex: 1170;
+  }
 
   @include phones {
     display: none;
@@ -20,30 +35,111 @@
 }
 
 .header__phone {
+
+  flex: 140;
   font-family: PlumbC;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
-  color: #CED5D8;
+  color: #2C3339;
   text-decoration: none;
   padding-left: 2%;
-  padding-right: 2%;
+  padding-right: 3%;
+  text-align: right;
+
+  &-index {
+    color: #CED5D8;
+
+    @include phones {
+      color: #2C3339;
+      font-size: 28px;
+      margin-right: 5%;
+      margin-top: 8%;
+    }
+  }
 
   @include phones {
-    color: #2C3339;
-    font-size: 28px;
-    margin-right: 5%;
-    margin-top: 8%;
+    display: none;
+
+    &-index {
+      display: block;
+    }
   }
+
+
+}
+
+.header__logo {
+  flex: 310;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1%;
+
+  @include phones {
+    display: none;
+  }
+
 }
 
 .header__logo-mob {
+  display: none;
+
+  @include phones {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    order: 2;
+    flex: 210;
+    padding-top: 8px;
+  }
+}
+
+.header__nav {
 
   display: none;
 
   @include phones {
-    display: block;
-    width: 8%;
-    margin-left: 3%;
-    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 50;
+    order: 1;
+    text-align: center;
+    height: 100%;
+
+    &-index {
+      order: 0;
+      margin-left: 3%;
+      margin-top: 5%;
+    }
+  }
+}
+
+.header__descr {
+  position: absolute;
+  top: -55px;
+  left: 0;
+}
+
+.header__descr h2 {
+  font-family: PlumbC;
+  color: #CED5D8;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.header__phone-mob {
+  display: none;
+
+  @include phones {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 60;
+    order: 3;
   }
 }

@@ -1,0 +1,44 @@
+.content {
+  display: flex;
+  flex: 9;
+  position: relative;
+  flex-direction: column;
+  padding: 35px;
+  overflow: auto;
+
+  & p {
+    text-align: justify;
+  }
+
+  & h1 {
+    text-transform: uppercase;
+    font-size: 21px;
+
+    @include phones {
+      margin: 0;
+      margin-top: 5px;
+    }
+  }
+
+  &-index {
+
+    justify-content: center;
+    align-items: center;
+
+    @include phones {
+      flex: 100%;
+      order: 1;
+      margin-top: 10%;
+    }
+
+  }
+
+  &-about {
+    background: #CED5D8;
+  }
+
+  @include phones {
+    padding: 10px;
+  }
+
+}

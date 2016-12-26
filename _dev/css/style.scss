@@ -6,9 +6,10 @@
 @import "fonts.css";
 
 //partials
-@import "partials/container";
+@import "partials/background";
 @import "partials/header";
 @import "partials/nav";
+@import "partials/content";
 
 * {
   @include box-sizing(border-box);
@@ -29,15 +30,7 @@ body {
   position: relative;
 }
 
-.header {
-  height: 60px;
-  display: flex;
-  align-items: center;
 
-  @include phones {
-    margin-bottom: 10%;
-  }
-}
 
 .main {
   display: flex;
@@ -47,34 +40,10 @@ body {
 
   @include phones {
     flex-flow: row wrap;
+    padding-bottom: 0;
   }
 }
 
-.nav {
-  display: flex;
-  flex: 3;
-  flex-direction: column;
-  justify-content: flex-start;
-
-  @include phones {
-    flex: 100%;
-    order: 2;
-  }
-
-}
-
-.index__content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 9;
-
-  @include phones {
-    flex: 100%;
-    order: 1;
-  }
-
-}
 
 .pagination {
   flex: 1;

@@ -1,3 +1,23 @@
+.nav {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  @include phones {
+    display: none;
+    flex: 100%;
+    order: 2;
+
+    &-index {
+      display: flex;
+    }
+  }
+
+}
+
+
+
 .nav__icon {
   margin-top: 65px;
   margin-left: 8%;
@@ -13,20 +33,31 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-left: 8%;
+  padding-left: 3%;
+  padding-right: 11%;
+}
+
+.nav__items {
+  padding-left: 5%;
+
+  &-active {
+    border: 2px solid #CED5D8;
+    font-weight: bold;
+  }
 }
 
 .nav__links {
   color: #CED5D8;
   text-decoration: none;
   font-family: PlumbC;
-  font-weight: bold;
+
   font-size: 18px;
   line-height: 48px;
 }
 
 .nav__links-index {
   color: #2C3339;
+  font-weight: bold;
 }
 
 .nav__lang {

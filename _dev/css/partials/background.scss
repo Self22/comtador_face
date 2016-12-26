@@ -19,5 +19,20 @@
     }
 
   }
+
+  &__about {
+    background: #2C3339 url("../img/bg_about.jpg") 100% 100% no-repeat fixed;
+    background-size: cover;
+
+    @include tablets {
+      background: #2C3339 url("../img/bg_about-tab.jpg") 100% 100% no-repeat fixed;
+      background-size: cover;
+    }
+
+    @include phones {
+      background: #2C3339 url("../img/bg_about-mob.jpg") 100% 100% no-repeat fixed;
+      background-size: cover;
+    }
+  }
 }
 
