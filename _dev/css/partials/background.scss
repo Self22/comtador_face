@@ -37,17 +37,34 @@
   }
 
   &__registration {
-    background: #2C3339 url("../img/bg_reg.jpg") 100% 100% no-repeat fixed;
+    background: #2C3339 url("../img/bg_reg.jpg") no-repeat fixed;
     background-size: cover;
 
     @include tablets {
-      background: #2C3339 url("../img/bg_reg-tab.jpg") 100% 100% no-repeat fixed;
+      background: #2C3339 url("../img/bg_reg-tab.jpg") no-repeat fixed;
       background-size: cover;
     }
 
     @include phones {
-      background: #2C3339 url("../img/bg_reg-mob.jpg") 100% 100% no-repeat fixed;
+      background: #2C3339 url("../img/bg_reg-mob.jpg") no-repeat fixed;
       background-size: cover;
+    }
+  }
+
+  &__fin {
+    background: #2C3339 url("../img/bg_fin.jpg") no-repeat fixed;
+    background-size: cover;
+
+    @include tablets {
+      background: #2C3339 url("../img/bg_fin-tab.jpg") no-repeat fixed;
+      background-size: cover;
+      min-height: 100vh;
+    }
+
+    @include phones {
+      background: #2C3339 url("../img/bg_fin-mob.jpg") no-repeat fixed;
+      background-size: cover;
+      min-height: 100vh;
     }
   }
 }

@@ -95,3 +95,70 @@
   display: flex;
   justify-content: space-around;
 }
+
+//////////// fin
+
+.content__fin {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fin__item {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.fin__year {
+  font-weight: bold;
+}
+
+.fin__img {
+  flex: 21;
+
+  @include desktop {
+    flex: 31;
+  }
+
+  @include tablets {
+    flex: 31;
+  }
+
+  @include phones {
+    flex: 100%;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-bottom: 20px;
+  }
+
+  & img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.fin__descr {
+  flex: 69;
+  padding-left: 25px;
+
+  @include desktop {
+    flex: 59;
+  }
+
+  @include tablets {
+    flex: 59;
+  }
+
+  @include phones {
+    flex: 100%;
+  }
+}
+
+.fin__text {
+  margin-top: 20px;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
