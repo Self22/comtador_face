@@ -17,6 +17,7 @@
 
 .header__address {
   flex: 860;
+  flex-shrink: 2;
   font-family: PlumbC;
   font-size: 12px;
   font-style: normal;
@@ -28,6 +29,14 @@
     flex: 1170;
   }
 
+  @include desktop {
+    opacity: 0;
+  }
+
+  @include tablets {
+    opacity: 0;
+  }
+
   @include phones {
     display: none;
   }
@@ -36,7 +45,7 @@
 
 .header__phone {
 
-  flex: 140;
+  flex: 140 130px;
   font-family: PlumbC;
   font-size: 18px;
   font-weight: 700;
@@ -120,6 +129,10 @@
   position: absolute;
   top: -55px;
   left: 0;
+
+  @include phones {
+    display: none;
+  }
 }
 
 .header__descr h2 {

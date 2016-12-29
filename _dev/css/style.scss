@@ -30,7 +30,9 @@ body {
   position: relative;
 }
 
-
+.visually-hidden {
+  display: none;
+}
 
 .main {
   display: flex;
@@ -50,6 +52,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 90vh;
 
   @include phones {
     display: none;
@@ -63,6 +66,11 @@ body {
 
 .index__logo {
   width: 72%;
+
+  @include tablets {
+    width: 100%;
+    margin-right: 20%;
+  }
 
   @include phones {
     width: 84%;
