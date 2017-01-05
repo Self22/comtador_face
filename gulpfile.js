@@ -5,6 +5,8 @@ var gulp = require('gulp'),
     prefixer = require('gulp-autoprefixer'),
     uglify = require('gulp-uglify'),
     sass = require('gulp-sass'),
+    postcss = require('gulp-postcss'),
+    flexibility = require('postcss-flexibility'),
     sourcemaps = require('gulp-sourcemaps'),
     cleanCSS = require('gulp-clean-css'),
     notify = require('gulp-notify'),
@@ -84,6 +86,8 @@ gulp.task('js:build', function () {
 
 
 gulp.task('css:build', function () {
+    var processors = [flexibility];
+
     gulp.src(path.src.css) // ������� ��� main.scss
     // .pipe(plumber({ // plumber - ������ ��� ������� ������.
     //     errorHandler: notify.onError(function (err) { // nofity - ������������� ������ � ������� ��� ��� ����.
@@ -95,6 +99,7 @@ gulp.task('css:build', function () {
     // }))
         .pipe(sourcemaps.init()) //�������������� sourcemap
         .pipe(sass().on('error', sass.logError)) //������������
+        .pipe(postcss(processors))
         .pipe(prefixer()) //������� ��������� ��������
         .pipe(cleanCSS()) //������
         .pipe(sourcemaps.write('.'))//�������� �����

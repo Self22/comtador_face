@@ -38,7 +38,7 @@ body {
   display: flex;
   flex-direction: row;
   flex: 1;
-  padding-bottom: 30px;
+  padding-bottom: 36px;
 
   @include phones {
     flex-flow: row wrap;
@@ -52,7 +52,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 85vh;
 
   @include phones {
     display: none;

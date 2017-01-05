@@ -14,7 +14,7 @@
     text-align: justify;
   }
 
-  & h1 {
+  &__header {
     text-transform: uppercase;
     font-size: 21px;
 
@@ -160,5 +160,32 @@
     margin: 0;
     padding: 0;
   }
+}
+
+.wait__text {
+  color: rgb(44, 51, 57);
+  opacity: 0.5;
+}
+
+.news__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  & p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.news__item {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.news__date {
+  font-style: italic;
 }
 

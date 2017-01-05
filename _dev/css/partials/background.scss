@@ -24,6 +24,7 @@
   &__about {
     background: #2C3339 url("../img/bg_about.jpg") 100% 100% no-repeat fixed;
     background-size: cover;
+    min-height: 100vh;
 
     @include tablets {
       background: #2C3339 url("../img/bg_about-tab.jpg") 100% 100% no-repeat fixed;
@@ -39,6 +40,7 @@
   &__registration {
     background: #2C3339 url("../img/bg_reg.jpg") no-repeat fixed;
     background-size: cover;
+    min-height: 100vh;
 
     @include tablets {
       background: #2C3339 url("../img/bg_reg-tab.jpg") no-repeat fixed;
@@ -54,6 +56,7 @@
   &__fin {
     background: #2C3339 url("../img/bg_fin.jpg") no-repeat fixed;
     background-size: cover;
+    min-height: 100vh;
 
     @include tablets {
       background: #2C3339 url("../img/bg_fin-tab.jpg") no-repeat fixed;
@@ -63,6 +66,78 @@
 
     @include phones {
       background: #2C3339 url("../img/bg_fin-mob.jpg") no-repeat fixed;
+      background-size: cover;
+      min-height: 100vh;
+    }
+  }
+
+  &__funds {
+    background: #2C3339 url("../img/bg_funds.jpg") no-repeat fixed;
+    background-size: cover;
+    min-height: 100vh;
+
+    @include tablets {
+      background: #2C3339 url("../img/bg_funds-tab.jpg") no-repeat fixed;
+      background-size: cover;
+      min-height: 100vh;
+    }
+
+    @include phones {
+      background: #2C3339 url("../img/bg_funds-mob.jpg") no-repeat fixed;
+      background-size: cover;
+      min-height: 100vh;
+    }
+  }
+
+  &__fundx {
+    background: #2C3339 url("../img/bg_fundx.jpg") no-repeat fixed;
+    background-size: cover;
+    min-height: 100vh;
+
+    @include tablets {
+      background: #2C3339 url("../img/bg_fundx-tab.jpg") no-repeat fixed;
+      background-size: cover;
+      min-height: 100vh;
+    }
+
+    @include phones {
+      background: #2C3339 url("../img/bg_fundx-mob.jpg") no-repeat fixed;
+      background-size: cover;
+      min-height: 100vh;
+    }
+  }
+
+  &__news {
+    background: #2C3339 url("../img/bg_news.jpg") no-repeat fixed;
+    background-size: cover;
+    min-height: 100vh;
+
+    @include tablets {
+      background: #2C3339 url("../img/bg_news-tab.jpg") no-repeat fixed;
+      background-size: cover;
+      min-height: 100vh;
+    }
+
+    @include phones {
+      background: #2C3339 url("../img/bg_news-mob.jpg") no-repeat fixed;
+      background-size: cover;
+      min-height: 100vh;
+    }
+  }
+
+  &__contacts {
+    background: #2C3339 url("../img/bg_contacts.jpg") no-repeat fixed;
+    background-size: cover;
+    min-height: 100vh;
+
+    @include tablets {
+      background: #2C3339 url("../img/bg_contacts-tab.jpg") no-repeat fixed;
+      background-size: cover;
+      min-height: 100vh;
+    }
+
+    @include phones {
+      background: #2C3339 url("../img/bg_contacts-mob.jpg") no-repeat fixed;
       background-size: cover;
       min-height: 100vh;
     }

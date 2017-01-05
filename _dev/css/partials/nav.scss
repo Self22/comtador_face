@@ -1,9 +1,10 @@
 .nav {
+  position: relative;
   display: flex;
   flex: 3;
   flex-direction: column;
   justify-content: flex-start;
-  height: 90vh;
+
 
   @include tablets {
     flex: 2;
@@ -27,7 +28,7 @@
 .nav__icon {
   margin-top: 65px;
   margin-left: 8%;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 
   @include phones {
     display: none;
@@ -75,6 +76,9 @@
 }
 
 .nav__lang {
+  position: fixed;
+  left: -6%;
+  bottom: 20px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -89,6 +93,7 @@
   flex: 1;
   display: flex;
   justify-content: center;
+
 }
 
 .lang__item-active {
