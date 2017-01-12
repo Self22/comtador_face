@@ -18,6 +18,7 @@
 
     &-index {
       display: flex;
+      flex-direction: column;
     }
   }
 
@@ -87,6 +88,38 @@
   display: flex;
   width: 102px;
   justify-content: space-around;
+
+  &-index {
+    flex-shrink: 2;
+
+    @include phones {
+      left: 55%;
+      bottom: 10px;
+
+      & li {
+        border-color: #2C3339;
+      }
+
+      & a {
+        color: #2C3339;
+      }
+    }
+  }
+
+  &-mob {
+    @include phones {
+      left: 2%;
+      bottom: 20px;
+
+      & li {
+        border-color: #CED5D8;
+      }
+
+      & a {
+        color: #CED5D8;
+      }
+    }
+  }
 }
 
 .lang__item {
