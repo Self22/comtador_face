@@ -25,6 +25,7 @@
     "imagemin-pngquant": "^5.0.0",
     "npm install gulp-clean-css": "^2.0.11",
     "npm install gulp-imagemin": "^3.0.3",
+    "postcss-flexibility": "^1.1.0",
     "rimraf": "^2.5.4"
   }
 }

@@ -189,3 +189,38 @@
   font-style: italic;
 }
 
+.content__text-contacts {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.contacts__descr {
+  flex: 425;
+
+  @include tablets {
+    flex: 100%;
+  }
+
+  @include phones {
+    flex: 100%;
+  }
+}
+
+.contacts__map {
+  flex: 415;
+
+  @include tablets {
+    flex: 100%;
+  }
+
+  @include phones {
+    flex: 100%;
+  }
+
+  & img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+
